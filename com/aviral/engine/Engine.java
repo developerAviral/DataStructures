@@ -1,12 +1,33 @@
 package com.aviral.engine;
 
 import com.aviral.list.LinkedList;
+import com.aviral.stack.DynamicStack;
 import com.aviral.stack.Stack;
 
 public class Engine {
     public static void main(String[] args) {
 
-        Stack st = new Stack();
+        /** Dynamic Stack */
+        DynamicStack st = new DynamicStack();
+        st.pop();
+        System.out.println(st.isEmpty());
+        st.push(10);
+        st.push(40);
+        st.push(100);
+        st.push(1);
+        st.push(20);
+        st.push(10000);
+        st.show();
+        st.pop();
+        st.show();
+        st.pop();
+        st.pop();
+        st.pop();
+        st.show();
+        System.out.println(st.isEmpty());
+
+        /** Static Stack */
+        /*Stack st = new Stack();
         st.pop();
         System.out.println(st.isEmpty());
         st.push(10);
@@ -21,7 +42,11 @@ public class Engine {
         st.pop();
         st.show();
         System.out.println(st.isEmpty());
+        */
+
+
         /**List Calls */
+
         /*
         LinkedList l = new LinkedList();
         l.insert(10);
