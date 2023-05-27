@@ -1,14 +1,33 @@
 package com.aviral.engine;
 
 import com.aviral.list.LinkedList;
+import com.aviral.queue.Queue;
 import com.aviral.stack.DynamicStack;
 import com.aviral.stack.Stack;
 
 public class Engine {
     public static void main(String[] args) {
 
+        /** Queue with Arrays */
+        Queue queue = new Queue();
+        queue.enqueue(10);
+        queue.enqueue(50);
+        queue.enqueue(60);
+        queue.enqueue(70);
+        queue.enqueue(80);
+        queue.enqueue(90);
+        queue.enqueue(150);
+        queue.enqueue(260);
+
+        queue.show();
+
+        queue.dequeue();;
+        queue.dequeue();
+
+        queue.show();
+
         /** Dynamic Stack */
-        DynamicStack st = new DynamicStack();
+       /* DynamicStack st = new DynamicStack();
         st.pop();
         System.out.println(st.isEmpty());
         st.push(10);
@@ -25,6 +44,8 @@ public class Engine {
         st.pop();
         st.show();
         System.out.println(st.isEmpty());
+        *
+        */
 
         /** Static Stack */
         /*Stack st = new Stack();
