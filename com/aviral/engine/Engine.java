@@ -1,5 +1,6 @@
 package com.aviral.engine;
 
+import com.aviral.binarysearch.BinarySearch;
 import com.aviral.list.LinkedList;
 import com.aviral.queue.Queue;
 import com.aviral.stack.DynamicStack;
@@ -8,8 +9,16 @@ import com.aviral.stack.Stack;
 public class Engine {
     public static void main(String[] args) {
 
+        /**Binary Search */
+        BinarySearch binary = new BinarySearch();
+        int [] arr = new int[]{-1,0,30,42,45,94,108,193,232};
+        System.out.println(binary.search(arr,45));
+        System.out.println(binary.search(arr,6));
+        System.out.println(binary.search(arr,193));
+        System.out.println(binary.search(arr,232));
+
         /** Queue with Arrays */
-        Queue queue = new Queue();
+      /*  Queue queue = new Queue();
         queue.enqueue(10);
         queue.enqueue(50);
         queue.enqueue(60);
@@ -25,6 +34,7 @@ public class Engine {
         queue.dequeue();
 
         queue.show();
+       */
 
         /** Dynamic Stack */
        /* DynamicStack st = new DynamicStack();
