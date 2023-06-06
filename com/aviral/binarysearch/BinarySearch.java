@@ -4,10 +4,10 @@ public class BinarySearch {
 
     public int search(int[] arr, int target){
         int start = 0;
-        int end = arr.length;
+        int end = arr.length -1 ;
         int mid = 0;
 
-        while(start< end){
+        while(start<= end){
             mid = start + (end- start) / 2 ;
             if(target > arr[mid]){
                 start = mid + 1;

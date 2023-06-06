@@ -1,6 +1,9 @@
 package com.aviral.engine;
 
 import com.aviral.binarysearch.BinarySearch;
+import com.aviral.binarysearch.questions.CeilingQuestion;
+import com.aviral.binarysearch.questions.FloorQuestion;
+import com.aviral.binarysearch.questions.NextGreatestLetter;
 import com.aviral.list.LinkedList;
 import com.aviral.queue.Queue;
 import com.aviral.stack.DynamicStack;
@@ -10,12 +13,15 @@ public class Engine {
     public static void main(String[] args) {
 
         /**Binary Search */
-        BinarySearch binary = new BinarySearch();
-        int [] arr = new int[]{-1,0,30,42,45,94,108,193,232};
-        System.out.println(binary.search(arr,45));
-        System.out.println(binary.search(arr,6));
-        System.out.println(binary.search(arr,193));
-        System.out.println(binary.search(arr,232));
+
+        NextGreatestLetter greatestLetter = new NextGreatestLetter();
+        char [] arr = new char[]{'a','b','c','h','i'};
+        System.out.println("Ceil of 44 :" + greatestLetter.getNextGreatestLetter(arr, 'j'));
+        System.out.println("Ceil of 233 :" + greatestLetter.getNextGreatestLetter(arr, 'k'));
+        System.out.println("Ceil of -1 :" + greatestLetter.getNextGreatestLetter(arr, 'd'));
+        System.out.println("Ceil of -20 :" + greatestLetter.getNextGreatestLetter(arr, 'e'));
+        System.out.println("Ceil of 2 :" + greatestLetter.getNextGreatestLetter(arr, 'b'));
+        System.out.println("Ceil of 2 :" + greatestLetter.getNextGreatestLetter(arr, 'c'));
 
         /** Queue with Arrays */
       /*  Queue queue = new Queue();
