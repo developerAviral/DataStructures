@@ -13,6 +13,7 @@ public class Engine {
     public static void main(String[] args) {
 
         /**Binary Search */
+/*
 
         NextGreatestLetter greatestLetter = new NextGreatestLetter();
         char [] arr = new char[]{'a','b','c','h','i'};
@@ -22,6 +23,7 @@ public class Engine {
         System.out.println("Ceil of -20 :" + greatestLetter.getNextGreatestLetter(arr, 'e'));
         System.out.println("Ceil of 2 :" + greatestLetter.getNextGreatestLetter(arr, 'b'));
         System.out.println("Ceil of 2 :" + greatestLetter.getNextGreatestLetter(arr, 'c'));
+*/
 
         /** Queue with Arrays */
       /*  Queue queue = new Queue();
