@@ -1,6 +1,7 @@
 package com.aviral.engine;
 
 import com.aviral.binarysearch.BinarySearch;
+import com.aviral.binarysearch.questions.BinarySearchInfiniteArray;
 import com.aviral.binarysearch.questions.CeilingQuestion;
 import com.aviral.binarysearch.questions.FloorQuestion;
 import com.aviral.binarysearch.questions.NextGreatestLetter;
@@ -11,6 +12,17 @@ import com.aviral.stack.Stack;
 
 public class Engine {
     public static void main(String[] args) {
+
+        /** Binary Search in Infinite Array **/
+        int [] nums = new int[]{2,50,69,70,89,91,109,211,323,392,450,456,556,600,650,680,700,780,800};
+        BinarySearchInfiniteArray binarySearchInfiniteArray = new BinarySearchInfiniteArray();
+        System.out.println("Search index of 456:" + binarySearchInfiniteArray.ans(nums,456));
+        System.out.println("Search index of 556:" + binarySearchInfiniteArray.ans(nums,556));
+        System.out.println("Search index of 2:" + binarySearchInfiniteArray.ans(nums,2));
+        System.out.println("Search index of 800:" + binarySearchInfiniteArray.ans(nums,800));
+        System.out.println("Search index of 900:" + binarySearchInfiniteArray.ans(nums,900));
+        System.out.println("Search index of 1:" + binarySearchInfiniteArray.ans(nums,1));
+        System.out.println("Search index of -456:" + binarySearchInfiniteArray.ans(nums,-456));
 
         /**Binary Search */
 /*
