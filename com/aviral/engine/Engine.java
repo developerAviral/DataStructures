@@ -13,6 +13,8 @@ import com.aviral.stack.Stack;
 public class Engine {
     public static void main(String[] args) {
 
+
+
         /** Binary Search in Infinite Array **/
         int [] nums = new int[]{2,50,69,70,89,91,109,211,323,392,450,456,556,600,650,680,700,780,800};
         BinarySearchInfiniteArray binarySearchInfiniteArray = new BinarySearchInfiniteArray();
