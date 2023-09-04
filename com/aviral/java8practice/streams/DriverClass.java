@@ -9,8 +9,8 @@ public class DriverClass {
     public static void main(String[] args) {
         List<Integer> integerList = new ArrayList<>();
         integerList.add(4);
-        integerList.add(4);
-        integerList.add(4);
+        integerList.add(2);
+        integerList.add(1);
         integerList.add(4);
 
         Q1 question1 = new Q1();
@@ -21,5 +21,8 @@ public class DriverClass {
 
         Q3 question3 = new Q3();
         question3.execute(integerList);
+
+        Q4 question4 = new Q4();
+        question4.execute(integerList,Arrays.asList("aviral","Rahul","BaCkery","aviral","Aviral"));
     }
 }
