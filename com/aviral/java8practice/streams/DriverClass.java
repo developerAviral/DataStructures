@@ -18,5 +18,8 @@ public class DriverClass {
 
         Q2 question2 = new Q2();
         question2.execute(Arrays.asList("aviral","Rahul","BaCkery"));
+
+        Q3 question3 = new Q3();
+        question3.execute(integerList);
     }
 }
